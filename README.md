@@ -1,8 +1,11 @@
 # Console!
 ### a very basic Xcode-Console output formatter with emojis for different outputs
 
-## Build Status:
-[![Build Status](https://travis-ci.org/Vinz1911/Console.svg?branch=master)](https://travis-ci.org/Vinz1911/Console)
+## Build:
+- [![Build Status](https://travis-ci.org/Vinz1911/Console.svg?branch=master)](https://travis-ci.org/Vinz1911/Console)
+- [![Coverage](https://api.codeclimate.com/v1/badges/c108780ef7a9f9886bf6/test_coverage.svg)](https://codeclimate.com/github/Vinz1911/Console)
+- [![Maintainability.svg](https://api.codeclimate.com/v1/badges/c108780ef7a9f9886bf6/maintainability.svg)](https://codeclimate.com/github/Vinz1911/Console)
+
 
 ## Installation:
 simply add the following line to your Podfile:
