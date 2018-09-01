@@ -1,5 +1,8 @@
-#  Console!
+# Console!
 ### a very basic Xcode-Console output formatter with emojis for different outputs
+
+## Build Status:
+[![Build Status](https://travis-ci.org/Vinz1911/Console.svg?branch=master)](https://travis-ci.org/Vinz1911/Console)
 
 ## Installation:
 simply add the following line to your Podfile:
