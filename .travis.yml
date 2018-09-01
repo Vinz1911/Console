@@ -13,4 +13,4 @@ language: swift
 # specific for the porject -> name of project, projects scheme and platform
 xcode_project: Console.xcodeproj
 xcode_scheme: Console-CI
-xcode_destination: platform=iOS Simulator,OS=11
+xcode_destination: platform=iOS Simulator,OS=11.0,name=iPhone X
