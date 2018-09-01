@@ -25,4 +25,5 @@ xcode_scheme: Console-CI
 xcode_destination: platform=iOS Simulator,OS=11.1,name=iPhone X
 
 after_script:
+  - slather
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
