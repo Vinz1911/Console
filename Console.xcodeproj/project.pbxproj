@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ACA0F7CA213ABBFF000B143F /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = ACA0F7C9213ABBFF000B143F /* .travis.yml */; };
+		ACA0F7CE213AEECA000B143F /* .slather.yml in Resources */ = {isa = PBXBuildFile; fileRef = ACA0F7CD213AEECA000B143F /* .slather.yml */; };
 		ACB3AE28213324BB0002551A /* Console.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB3AE1E213324BB0002551A /* Console.framework */; };
 		ACB3AE2D213324BB0002551A /* ConsoleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB3AE2C213324BB0002551A /* ConsoleTests.swift */; };
 		ACB3AE2F213324BB0002551A /* Console.h in Headers */ = {isa = PBXBuildFile; fileRef = ACB3AE21213324BB0002551A /* Console.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		ACA0F7C9213ABBFF000B143F /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		ACA0F7CD213AEECA000B143F /* .slather.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .slather.yml; sourceTree = "<group>"; };
 		ACB3AE1E213324BB0002551A /* Console.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Console.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB3AE21213324BB0002551A /* Console.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Console.h; sourceTree = "<group>"; };
 		ACB3AE22213324BB0002551A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		ACEA397421332CB500346EFB /* Extended */ = {
 			isa = PBXGroup;
 			children = (
+				ACA0F7CD213AEECA000B143F /* .slather.yml */,
 				ACEA397221332C7700346EFB /* LICENSE */,
 				ACA0F7C9213ABBFF000B143F /* .travis.yml */,
 				ACEA397621332CE600346EFB /* README.md */,
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA0F7CA213ABBFF000B143F /* .travis.yml in Resources */,
+				ACA0F7CE213AEECA000B143F /* .slather.yml in Resources */,
 				ACEA397321332C7700346EFB /* LICENSE in Resources */,
 				ACEA3971213329D500346EFB /* Console.podspec in Resources */,
 			);

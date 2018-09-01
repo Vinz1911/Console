@@ -1,0 +1,15 @@
+coverage_service: cobertura_xml
+xcodeproj: ./Console.xcodeproj
+scheme: Console-CI
+source_directory: ./Console
+output_directory: ./
+ignore:
+- "**/Pods/*"
+- "thirdparty/*"
+- "./Scripts/*"
+- "**/3rdParty/*"
+- "../**/Developer/*"
+- "**/libraries/*"
+- "Module-Core/*"
+- "Module-Components/*"
+- "**/AppUnitTests/*"
