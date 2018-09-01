@@ -1,8 +1,17 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=d71ddfdc423c3f00bc6340edb469aa2bea278bebea894236276bcadb60dc2ee6
+
 # The OSX Image on which the build should be testet
 osx_image: xcode9.4
 
 # the programming language
 language: swift
+
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 
 # install pods if there
 # podfile: Podfile
@@ -14,3 +23,6 @@ language: swift
 xcode_project: Console.xcodeproj
 xcode_scheme: Console-CI
 xcode_destination: platform=iOS Simulator,OS=11.1,name=iPhone X
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
