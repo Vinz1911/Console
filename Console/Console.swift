@@ -18,7 +18,12 @@ fileprivate enum ConsoleCharacters: String {
     case warning = "⚠️"
     case error = "❌"
 }
-
+/// Extension to Format the Output of the printed Array
+fileprivate extension Sequence {
+    var minimalDescription: String {
+        return map { "\($0)" }.joined(separator: " ")
+    }
+}
 /// Console is a very basic Xcode-Console output formatter.
 /// it's just a simple "wrapper" around the print function.
 /// it uses emojis for different outputs for better readability.
@@ -32,7 +37,7 @@ public struct Console {
     ///   - terminator: The string to print after all items have been printed. The
     ///     default is a newline (`"\n"`).
     static public func info(_ items: Any..., separator: String = " ", terminator: String = "\n") -> Void {
-        print("\(ConsoleCharacters.info.rawValue) INFO: \(items)", separator:separator, terminator: terminator)
+        print("\(ConsoleCharacters.info.rawValue) INFO: \(items.minimalDescription)", separator:separator, terminator: terminator)
     }
     /// Console's debug output 🛠
     /// - Parameters:
@@ -42,7 +47,7 @@ public struct Console {
     ///   - terminator: The string to print after all items have been printed. The
     ///     default is a newline (`"\n"`).
     static public func debug(_ items: Any..., separator: String = " ", terminator: String = "\n") -> Void {
-        print("\(ConsoleCharacters.debug.rawValue) DEBUG: \(items)", separator:separator, terminator: terminator)
+        print("\(ConsoleCharacters.debug.rawValue) DEBUG: \(items.minimalDescription)", separator:separator, terminator: terminator)
     }
     /// Console's warning output ⚠️
     /// - Parameters:
@@ -52,7 +57,7 @@ public struct Console {
     ///   - terminator: The string to print after all items have been printed. The
     ///     default is a newline (`"\n"`).
     static public func warning(_ items: Any..., separator: String = " ", terminator: String = "\n") -> Void {
-        print("\(ConsoleCharacters.warning.rawValue) WARNING: \(items)", separator:separator, terminator: terminator)
+        print("\(ConsoleCharacters.warning.rawValue) WARNING: \(items.minimalDescription)", separator:separator, terminator: terminator)
     }
     /// Console's error output ❌
     /// - Parameters:
@@ -62,6 +67,6 @@ public struct Console {
     ///   - terminator: The string to print after all items have been printed. The
     ///     default is a newline (`"\n"`).
     static public func error(_ items: Any..., separator: String = " ", terminator: String = "\n") -> Void {
-        print("\(ConsoleCharacters.error.rawValue) ERROR: \(items)", separator:separator, terminator: terminator)
+        print("\(ConsoleCharacters.error.rawValue) ERROR: \(items.minimalDescription)", separator:separator, terminator: terminator)
     }
 }

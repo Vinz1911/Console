@@ -20,17 +20,9 @@ class ConsoleTests: XCTestCase {
     }
 
     func testExample() {
-        Console.info("Info Message")
-        Console.debug("Debug Message")
-        Console.warning("Warning Message")
-        Console.error("Error Message")        
+        Console.info("I'm a Info Message")
+        Console.debug("I'm a Debug Message")
+        Console.warning("I'm a Warning Message")
+        Console.error("I'm a Error Message")
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

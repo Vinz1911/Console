@@ -7,7 +7,7 @@
 #
 Pod::Spec.new do |s|
   s.name         = "Console"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.summary      = "Console for Xcode"
   s.description  = "Console is a very basic Xcode-Console output formatter with emojis"
   s.homepage     = "https://weist.ut"

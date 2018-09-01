@@ -1,0 +1,16 @@
+# The OSX Image on which the build should be testet
+osx_image: xcode9.4
+
+# the programming language
+language: swift
+
+# install pods if there
+# podfile: Podfile
+# before_install:
+# - gem install cocoapods
+# - pod install
+
+# specific for the porject -> name of project, projects scheme and platform
+xcode_project: Console.xcodeproj
+xcode_scheme: Console-CI
+xcode_destination: platform=iOS Simulator,OS=11
