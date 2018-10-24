@@ -32,4 +32,4 @@ Console.error("I'm a Error Message")
 Vinzenz Weist, Vinz1911@me.com
 
 ## License:
-The FlashSDK is only available under the MIT license. See the LICENSE file for more info.
+Console is only available under the MIT license. See the LICENSE file for more info.

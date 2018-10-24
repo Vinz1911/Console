@@ -7,10 +7,10 @@
 #
 Pod::Spec.new do |s|
   s.name         = "Console"
-  s.version      = "1.1.0"
+  s.version      = "1.0.2"
   s.summary      = "Console for Xcode"
   s.description  = "Console is a very basic Xcode-Console output formatter with emojis"
-  s.homepage     = "https://weist.ut"
+  s.homepage     = "https://weist.it"
   s.license      = "MIT"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Vinzenz Weist" => "Vinz1911@me.com" }
